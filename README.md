@@ -586,6 +586,10 @@ its predictions as the sole basis for moderation, mental-health, HR,
 or any other decision with real-world consequences for individuals. Always
 pair automated emotion scoring with human review.
 
+## Team
+
+[Basma Mansour](https://github.com/BasmaMansour99), [Radwa El-Ashry](https://github.com/radwaelashry30-crypto), Marwa Baraka, Shrouk Khaled
+
 ## Report
 
 - [`ReviewSense_AI_Report.docx`](ReviewSense_AI_Report.docx) -- the original
