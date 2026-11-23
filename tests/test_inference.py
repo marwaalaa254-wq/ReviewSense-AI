@@ -1,4 +1,4 @@
-"""Smoke tests for the Sentio preprocessing/model/inference pipeline.
+"""Smoke tests for the ReviewSense AI preprocessing/model/inference pipeline.
 
 Checkpoint-dependent tests are skipped with a clear reason when the relevant
 artifact is not present (e.g. the fine-tuned BERT weights, which are excluded
