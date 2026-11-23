@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Sentio training script.
+"""ReviewSense AI training script.
 
 Reproduces the notebook's model-training cells for a single selected model
 family. Mirrors TruthLens's ``train.py`` pattern: a ``--model`` flag selects
@@ -51,7 +51,7 @@ NEURAL_MODELS = {"attention_nn", "glove_bilstm", "bert"}
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Train a Sentio emotion classifier.")
+    parser = argparse.ArgumentParser(description="Train a ReviewSense AI emotion classifier.")
     parser.add_argument("--train-file", type=Path, default=Path("data/train.txt"))
     parser.add_argument("--val-file", type=Path, default=Path("data/val.txt"))
     parser.add_argument("--test-file", type=Path, default=Path("data/test.txt"))

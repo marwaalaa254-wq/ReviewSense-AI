@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Sentio real-time inference CLI: classifies free text into one of six emotions
+"""ReviewSense AI real-time inference CLI: classifies free text into one of six emotions
 (anger, fear, joy, love, sadness, surprise) with a confidence score.
 
 Default model: GloVe + BiLSTM (``models/model_glove.pt``, 90.60% test accuracy,
@@ -218,7 +218,7 @@ def predict_emotion(
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run Sentio real-time emotion inference on a piece of text.")
+    parser = argparse.ArgumentParser(description="Run ReviewSense AI real-time emotion inference on a piece of text.")
     parser.add_argument("--text", type=str, required=True, help="Raw text to classify.")
     parser.add_argument("--model", type=str, default="glove_bilstm",
                          choices=["glove_bilstm", "attention_nn", "bert", "svm", "decision_tree"])

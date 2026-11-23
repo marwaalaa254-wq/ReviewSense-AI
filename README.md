@@ -1,4 +1,4 @@
-# Sentio
+# ReviewSense AI
 
 **Understand the feeling behind every word.**
 
@@ -10,9 +10,9 @@ network, a GloVe-embedding BiLSTM, and a fine-tuned BERT transformer.
 
 This project was developed internally under the working title **"ReviewSense
 AI"** (see [`ReviewSense_AI_Report.docx`](ReviewSense_AI_Report.docx), the
-original written report) before shipping as **Sentio**.
+original written report) and is now published as **ReviewSense AI**.
 
-**Product / live demo:** [sentio-chi.vercel.app](https://sentio-chi.vercel.app)
+**Product / live demo:** [Live demo](https://sentio-chi.vercel.app)
 -- the deployed marketing/sign-up site for this project, reporting "93.5%
 accuracy" across the same six emotions on a fine-tuned BERT backbone. That
 number lines up closely with what this repo independently verifies below: the
@@ -34,7 +34,7 @@ for why and how to fix it.
 
 ## Project Overview
 
-Sentio scores the emotional tone of a piece of text (originally built and
+ReviewSense AI scores the emotional tone of a piece of text (originally built and
 benchmarked on a Twitter-style short-text corpus) using four increasingly
 sophisticated approaches, developed and benchmarked side-by-side in the
 research notebook under [`notebooks/`](notebooks/):
@@ -54,7 +54,7 @@ research notebook under [`notebooks/`](notebooks/):
 Understanding the emotion behind a piece of text -- not just its polarity
 (positive/negative), but which specific feeling it expresses -- is useful for
 content moderation triage, customer-feedback analysis, and research
-applications. Sentio explores the full spectrum of NLP techniques, from
+applications. ReviewSense AI explores the full spectrum of NLP techniques, from
 sparse bag-of-words features to a fully fine-tuned transformer, to compare
 how much each additional layer of modeling sophistication actually buys on a
 compact, imbalanced, six-class emotion corpus.
@@ -396,7 +396,7 @@ the weights.
 ## Project Structure
 
 ```
-Sentio/
+ReviewSense-AI/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
@@ -436,7 +436,7 @@ Sentio/
 ├── backend/                         # FastAPI serving layer -- see backend/README.md
 │   ├── README.md
 │   ├── main.py                      # FastAPI app: /health, /predict
-│   ├── inference.py                 # SentioModel -- loads model_bert/, tokenizes, predicts
+│   ├── inference.py                 # ReviewSenseModel -- loads model_bert/, tokenizes, predicts
 │   ├── clean_text.py
 │   ├── download_model.py            # fetches BERT checkpoint at Docker build time (see backend/README.md)
 │   ├── requirements.txt
@@ -580,7 +580,7 @@ the same sentence (see `tests/test_inference.py`'s attention_nn example: >99.9%)
 
 ## Responsible-Use Disclaimer
 
-Sentio is a research and educational project. Emotion classification from
+ReviewSense AI is a research and educational project. Emotion classification from
 text is inherently noisy and culturally/contextually dependent -- do not use
 its predictions as the sole basis for moderation, mental-health, HR,
 or any other decision with real-world consequences for individuals. Always

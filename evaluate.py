@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Sentio standalone evaluation script.
+"""ReviewSense AI standalone evaluation script.
 
 Loads a trained checkpoint/artifact (never refits) and reports accuracy,
 macro precision/recall/F1, and a confusion matrix against data/test.txt (or a
@@ -40,7 +40,7 @@ CLASSIC_MODELS = {"logreg", "decision_tree", "random_forest", "svm"}
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Evaluate a trained Sentio checkpoint on test data.")
+    parser = argparse.ArgumentParser(description="Evaluate a trained ReviewSense AI checkpoint on test data.")
     parser.add_argument("--test-file", type=Path, default=Path("data/test.txt"))
     parser.add_argument("--train-file", type=Path, default=Path("data/train.txt"),
                          help="Used only by --model glove_bilstm, to deterministically rebuild the "
@@ -273,7 +273,7 @@ def _report(y_test, preds, probs, class_names) -> None:
 
     metrics = compute_full_metrics(y_test, preds, probs, class_names, model_name="model")
     print("\n" + "=" * 60)
-    print("Sentio Evaluation Results")
+    print("ReviewSense AI Evaluation Results")
     print("=" * 60)
     for k, v in metrics.items():
         if k != "Model":
