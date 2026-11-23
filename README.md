@@ -595,6 +595,10 @@ pair automated emotion scoring with human review.
 - [`ReviewSense_AI_Report.docx`](ReviewSense_AI_Report.docx) -- the original
   written project report (working-title era), included in this repository.
 
+## Presentation
+
+[Download the ReviewSense AI presentation (PowerPoint)](ReviewSense_AI_Granular_Intelligence.pptx)
+
 ## License
 
 No license has been specified for this project. All rights reserved by the
