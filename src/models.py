@@ -1,4 +1,4 @@
-"""PyTorch model architectures extracted from the Sentio research notebook.
+"""PyTorch model architectures extracted from the ReviewSense AI research notebook.
 
 Ported 1:1 from ``notebooks/tf-idf-to-transformers-94-sentiment-accuracy-PYTORCH-VISUALIZED.ipynb``
 ("Neural Network Model & Tuning" and "GloVe Embeddings" sections). Both

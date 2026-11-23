@@ -1,4 +1,4 @@
-"""Data loading, cleaning, language-ID, and class-balancing pipeline for Sentio.
+"""Data loading, cleaning, language-ID, and class-balancing pipeline for ReviewSense AI.
 
 Ported from ``notebooks/tf-idf-to-transformers-94-sentiment-accuracy-PYTORCH-VISUALIZED.ipynb``:
 "Loading and Exploring the Dataset", "Handling Duplicate Text Entries", "Text

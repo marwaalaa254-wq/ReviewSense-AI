@@ -1,1 +1,1 @@
-"""Sentio -- source package for the emotion/sentiment classifier pipeline."""
+"""ReviewSense AI -- source package for the emotion/sentiment classifier pipeline."""

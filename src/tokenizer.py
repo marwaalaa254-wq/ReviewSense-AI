@@ -1,4 +1,4 @@
-"""Tokenizers used across Sentio's model families.
+"""Tokenizers used across ReviewSense AI's model families.
 
 Ported from the notebook's "Integrating BPE Tokenization with Neural Networks"
 (``train_and_tokenize_bpe``) and "GloVe Embeddings" (``WordLevelTokenizer``)

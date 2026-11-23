@@ -1,4 +1,4 @@
-"""Shared PyTorch training/evaluation infrastructure for Sentio.
+"""Shared PyTorch training/evaluation infrastructure for ReviewSense AI.
 
 Ported from the notebook's "Shared PyTorch Utilities (Datasets, Training Loop,
 Evaluation)" cell -- reused by both the Attention-NN and GloVe+BiLSTM models
