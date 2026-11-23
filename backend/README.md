@@ -1,6 +1,6 @@
-# Sentio Backend (FastAPI)
+# ReviewSense AI Backend (FastAPI)
 
-The serving layer for Sentio: a FastAPI app that wraps a BERT sequence
+The serving layer for ReviewSense AI: a FastAPI app that wraps a BERT sequence
 classifier behind `POST /predict`, for the deployed frontend
 (`sentio-chi.vercel.app`) to call.
 
@@ -82,8 +82,8 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 Build context is `backend/` (not the repo root):
 
 ```bash
-docker build -t sentio-api -f backend/Dockerfile backend/
-docker run -p 8000:8000 sentio-api
+docker build -t reviewsense-ai-api -f backend/Dockerfile backend/
+docker run -p 8000:8000 reviewsense-ai-api
 ```
 
 ## Files
@@ -91,7 +91,7 @@ docker run -p 8000:8000 sentio-api
 | File | Purpose |
 |---|---|
 | `main.py` | FastAPI app: `/health`, `/predict` |
-| `inference.py` | `SentioModel` — loads `model_bert/`, tokenizes, runs inference |
+| `inference.py` | `ReviewSenseModel` — loads `model_bert/`, tokenizes, runs inference |
 | `clean_text.py` | Light text cleaning applied before tokenization |
 | `download_model.py` | Fetches the BERT checkpoint at Docker build time — see Known Issue above |
 | `model_bert/` | Model config + tokenizer (weights are downloaded at build time, not committed) |

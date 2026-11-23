@@ -1,5 +1,5 @@
 """
-Text preprocessing for Sentio sentiment analysis.
+Text preprocessing for ReviewSense AI sentiment analysis.
 Extracted from the training notebook — applies the same cleaning
 pipeline used during BERT fine-tuning.
 """

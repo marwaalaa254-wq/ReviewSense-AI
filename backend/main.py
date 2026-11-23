@@ -1,5 +1,5 @@
 """
-Sentio — FastAPI Backend
+ReviewSense AI — FastAPI Backend
 BERT-based sentiment analysis API.
 
 Run: uvicorn main:app --host 0.0.0.0 --port 8000
@@ -24,7 +24,7 @@ from inference import (
 # ── App ──────────────────────────────────────────────────────────────────────
 
 app = FastAPI(
-    title="Sentio API",
+    title="ReviewSense AI API",
     description="BERT-based sentiment analysis — understand the feeling behind every word.",
     version="1.0.0",
 )

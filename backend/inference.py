@@ -1,5 +1,5 @@
 """
-BERT inference engine for Sentio sentiment analysis.
+BERT inference engine for ReviewSense AI sentiment analysis.
 Loads the fine-tuned model and runs prediction.
 """
 
@@ -52,7 +52,7 @@ class PredictionResult(NamedTuple):
     probabilities: dict[str, float]
 
 
-class SentioModel:
+class ReviewSenseModel:
     """Singleton BERT model wrapper for sentiment prediction."""
 
     def __init__(self):
@@ -70,14 +70,14 @@ class SentioModel:
         else:
             model_dir = Path(model_dir)
 
-        print(f"[sentio] Loading BERT model from {model_dir}...")
+        print(f"[reviewsense-ai] Loading BERT model from {model_dir}...")
 
         self._tokenizer = BertTokenizerFast.from_pretrained(str(model_dir))
         self._model = BertForSequenceClassification.from_pretrained(str(model_dir))
         self._model.to(self._device)
         self._model.eval()
 
-        print(f"[sentio] Model loaded on {self._device}")
+        print(f"[reviewsense-ai] Model loaded on {self._device}")
 
     def predict(self, text: str) -> PredictionResult:
         """
@@ -136,10 +136,10 @@ class SentioModel:
 
 
 # Global model instance
-_model = SentioModel()
+_model = ReviewSenseModel()
 
 
-def get_model() -> SentioModel:
+def get_model() -> ReviewSenseModel:
     """Get the global model instance, loading if needed."""
     _model.load()
     return _model
