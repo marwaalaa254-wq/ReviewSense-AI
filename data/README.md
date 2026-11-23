@@ -1,6 +1,6 @@
 # Data Directory
 
-Sentio is trained on the **"Emotions dataset for NLP"** (a widely-distributed
+ReviewSense AI is trained on the **"Emotions dataset for NLP"** (a widely-distributed
 Twitter-emotion corpus, commonly mirrored on Kaggle -- e.g. under names such
 as "Emotions dataset for NLP" / dair-ai's `emotion` dataset family), shipped
 here as three semicolon-separated text files:
